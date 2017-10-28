@@ -1,0 +1,46 @@
+<head>
+<meta charset="utf-8">
+<title>W3Cschool教程(w3cschool.cn)</title>
+</head>
+<body bgcolor="#CCE8CF">
+
+<p>在一个对象方法中 ，<b>this</b> 的值是对象本身。</p>
+<p id="demo"></p>
+<p id="fun"> </p>
+<p id="result"></p>
+<script>
+var myObject = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function() {
+		return this;
+    }
+}
+var zhaoObject={
+  firstName:"zhao",
+  lastName:"tian",
+  getName:function(){
+    return this.firstName+this.lastName;
+  }
+}
+
+function myFunction(arg1,arg2){
+  this.firstName=arg1;
+  this.lastName=arg2;
+}
+
+var x = new myFunction("chuan","xing");
+
+function multiFun(a,b){
+  return a*b;
+}
+document.getElementById("result").innerHTML=multiFun.call(multiFun,3,4);
+var myArray = [5,7];
+document.getElementById("result").innerHTML=multiFun.apply(multiFun,myArray);
+// document.getElementById("demo").innerHTML = myObject.fullName();
+document.getElementById("demo").innerHTML=zhaoObject.getName();
+document.getElementById("fun").innerHTML=x.firstName;
+</script>
+
+</body>
+</html>
