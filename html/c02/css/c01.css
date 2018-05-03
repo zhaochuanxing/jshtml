@@ -1,0 +1,32 @@
+/* font */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic);
+
+body{
+   font-family:"Courier New",Courier monospace;
+   background: url();
+   background-size:cover;
+   margin: 0;
+   padding:0;
+}
+h1,h3,p{
+    float:left;
+    clear:left;
+    width:320px;
+    background-color:#fff;
+    color:#5a514c;
+    text-align: center;
+}
+h1{
+   margin: 50px 0 50px;
+   height: 175px;
+   background-image: url();
+   background-repeat: no-repeat;
+    text-indent: -9999px;
+    
+}
+h3{
+
+}
+p{
+	
+}
