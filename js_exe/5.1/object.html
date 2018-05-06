@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    "use strict";
+    var person = new Object();
+    person.name="zhao";
+    person.age = 25;
+    console.log("person.name = "+person.name);
+    console.log("person.age = "+person.age);
+
+    var per = {
+      name:"person",
+      age:29,
+      6:true
+    };
+    console.log("per.name "+per["name"]);
+    console.log("per age "+per["age"] );
+    console.log("per special "+per["6"]);//没有输出
+
+    var obj = {};
+    obj.name="zhao";
+    obj.age = 27;
+    var n = "name";
+    console.log("obj: "+obj[n]);
+    console.log("obj: "+obj.age);
+
+    function displayInfo(args){
+      var output = "";
+      if(typeof args.name == "string"){
+        output +="Name: "+args.name + "\n";
+      }
+      if(typeof args.age == "number"){
+        output += "Age: "+args.age +"\n";
+      }
+      console.log("output : "+output);
+    }
+    displayInfo({
+      name:"Nick",
+      age:29
+    });
+    displayInfo({
+      name:"Greg"
+    });
+
+
+    </script>
+    </head>
+    <body>
+    </body>
+</html>

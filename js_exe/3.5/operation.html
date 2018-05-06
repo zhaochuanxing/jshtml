@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    "use strict";
+    // var age = 29;
+    // var result = --age +2;//28+2 = 30
+    // console.log(result);
+    // var num1 = 3;
+    // var num = num1++ +4;//3+4 = 7;
+    // console.log(num);
+
+    var s1 = "2";
+    var s2 = "a";
+    var s3 = false;
+    var s4 = 1.1;
+    //定义对象，并且复写方法
+    var obj = {
+      valueOf:function(){
+        return 3;
+      }
+    }
+    console.log(++s3);//1
+    console.log(--s4);//0.10000000000000009 舍入精度误差
+    console.log(++obj);//4
+    
+    </script>
+    </head>
+    <body>
+    </body>
+
+</html>

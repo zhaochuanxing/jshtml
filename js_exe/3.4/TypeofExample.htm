@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    "use strict";
+      // var message = "zhao";
+      // alert(typeof message);
+      // alert(typeof a);
+      // alert(typeof null);
+      // alert(typeof(3));
+
+      // var msg = undefined;
+      // alert(msg == undefined);
+      //会出现错误：
+      //Uncaught ReferenceError: tian is not defined
+    // at TypeofExample.htm:12
+      // alert(tian);
+
+      // var msg;
+      // alert(typeof msg);
+      // alert(typeof tian);
+
+      //NULL 类型
+      // var car = null;
+      // alert(typeof (car));
+      // alert(undefined == null);
+
+      //boolean类型
+      // var message = "Hello World";
+      // var msgBoolean = Boolean(message);
+      // alert(msgBoolean);
+      // if(message){
+      //   alert('value is true');
+      // }
+
+      //number int类型
+      // var intNum = 55;
+      // var octalNum = 070;
+      // var octalNum2 = 08;
+      // var hexNum1 = 0xA;
+      // var hexNum2 = 0x1f;
+      // alert(octalNum);
+      // alert(octalNum2);
+      // alert(hexNum1);
+      // alert(hexNum2);
+
+      //float 数据类型
+      // var floatNum1= 1.1;
+      // var floatNum2 = 0.1;
+      // var floatNum3 = 10.0;
+      // var float4 = 3.125e8;
+      // var float5 = 3e-6;
+      // console.log(float5);
+      // var a = 0.1;
+      // var b = 0.2;
+      // console.log(a+b);
+      // if(a+b == 0.3){//0.30000000000000004
+      //   alert("success you got 0.3");
+      // }
+
+      //数值范围
+      // var max = Number.MAX_VALUE;//1.7976931348623157e+308      
+      // console.log(max);
+      // var min = Number.MIN_VALUE;
+      // console.log(min);//5e-324
+      // console.log(isFinite(max-1));//true 是有穷的
+      // console.log(isFinite(23));//true
+      // var finate = Number.MAX_VALUE+Number.MAX_VALUE;
+      // console.log(isFinite(finate));//false 不是有穷的
+      // console.log(Number.POSITIVE_INFINITY);//infinity正无穷
+      // console.log(Number.NEGATIVE_INFINITY);//-Infinity 负无穷
+      // console.log(isFinite(Number.POSITIVE_INFINITY));//false
+
+      //NaN 不是数值 Not a Number
+      //isNaN一个函数，判断是否 不是数值
+      // console.log(isNaN(NaN));//true
+      // console.log(isNaN(10));//false
+      // console.log(isNaN("10"));//false;
+      // console.log(isNaN("blue"));//true
+      // console.log(isNaN(true));//false,可以被转换为数值
+      
+      //数值转换
+      // var num1 = parseInt("123blue");//123
+      // var num2 = parseInt("");//NaN
+      // var num3 = parseInt("0xA");//10
+      // var num4 = parseInt("22.5");//22
+      // var num5 = parseInt("70");//70
+      // var num6 = parseInt(80);//80
+      // var num7 = parseInt("070");//70 ecmascript 5认为是十进制
+      // var num8 = parseInt("070",8);//56 指定为8进制
+      // var num9 = parseInt(0xe);//14
+      // var num10 = parseInt(10,2);//2 将10作为2进制，则对应的十进制为2
+      // var num11 = parseInt(3,2);//NaN 在而二进制中没有数字3，转换失败
+      // console.log(num1);
+      // console.log(num2);
+      // console.log(num3);
+      // console.log(num4);
+      // console.log(num7);
+      // console.log(num8);
+      // console.log(num9);
+      // console.log(num11);
+
+      //String 类型
+      // var text = "hello,"+"\u03a3";
+      // console.log(text);
+      // console.log(text.length);//7 最后的算做是一个字符
+      
+      // var lang = "Java";
+      // lang = lang + "Script";
+      // console.log(lang);
+
+      // var age = 25;
+      // var ageStr = age.toString();
+      // var found = true;
+      // var foundStr = found.toString();
+      // console.log(ageStr+foundStr);
+
+      // var num = 10;
+      // console.log(num.toString());//10
+      // console.log(num.toString(2));//1010
+      // console.log(num.toString(8));//12
+      // console.log(num.toString(16));//A
+
+      // var value1 = 8;
+      // var value2 = true;
+      // var value3 = null;
+      // var value4;
+      // console.log(value1);
+      // console.log(value2)
+      // console.log(value3);//null
+      // console.log(String(value3))
+      // console.log(value4);//undefined
+      // console.log(String(value4));
+      //console.log看来会默认加上String()函数
+
+      //Object 类型
+
+      var object = new Object();
+      console.log(object);
+      
+      
+
+    </script>
+  </head>
+  <body>
+  </body>
+ 
+</html>

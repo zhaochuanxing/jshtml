@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    "use strict";
+    var colors = new Array();
+    colors = new Array(20);
+    colors = new Array("red","blue","green");
+    console.log("colors : "+colors);
+
+    var names = new Array("Greg");
+    console.log("names : "+names);
+
+    var season = ["spring","summer","fall","winter"];
+    var numbers = [1,2,3,];
+    console.log(numbers.length);//3
+    console.log("season: "+season);
+    console.log(season.length);//4
+    console.log("numbers: "+numbers);
+
+    console.log(season[1]);
+    season.length = 3;
+    console.log("season: "+season);
+    season.length = 5;
+    console.log("season : "+season);
+    console.log(season[3]);//undefined
+    season[season.length]="new year";//注意是season.length
+    console.log("season: " + season);
+
+    console.log(season instanceof Array);//true
+    console.log(typeof season);//object
+    console.log(Array.isArray(season));//true
+
+    var person1 = {
+      //重写了toLocaleString 和 toString
+      toLocaleString :function(){
+        return "Nick";
+      },
+      toString:function(){
+        return "Ni";
+      }
+    };//赋值语句,需要加入;
+
+    var person2 = {
+      toLocaleString:function(){
+        return "zhao";
+      },
+      toString:function(){
+        return "Z";
+      }
+    };
+    var people = [person1,person2];
+    console.log(people);//会将对象打印出来
+    console.log(people.toLocaleString());//
+    console.log(people.toString());
+
+
+    var colors = ["red","green","blue"];
+    console.log(colors.join("&"));
+
+    
+    </script>
+    </head>
+    <body>
+    </body>
+</html>
