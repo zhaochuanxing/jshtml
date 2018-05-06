@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    "use strict";
+    var age = 29;
+    function sayAge(){
+      console.log(this.age);
+    }
+    console.log(window.age);
+    sayAge.call(this);
+    window.sayAge();
+    
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
