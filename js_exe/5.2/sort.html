@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    "use strict";
+    var values = [1,2,3,4,5];
+    console.log(values);
+    values.reverse();
+    console.log(values);
+    values.reverse();//再次翻转,会变成原来
+    console.log(values);
+
+    var numbers = [0,2,5,10,15];
+    numbers.sort();
+    console.log(numbers);//排序输出是:[0, 10, 15, 2, 5],不符合预期.默认的排序规则不符合大多数情况
+
+    function compare(value1,value2){
+      if(value1<value2){
+        return -1;//value1-value2
+      }else if(value1>value2){
+        return 1;
+      }else{
+        return 0;
+      }
+    }
+    numbers.sort(compare);
+    console.log(numbers);//[0, 2, 5, 10, 15]
+
+    function compareReverse(value1,value2){
+      return value2-value1;//将会实现降序排序的效果
+    }
+    numbers.sort(compareReverse);
+    console.log(numbers);//[15, 10, 5, 2, 0]
+    
+
+
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

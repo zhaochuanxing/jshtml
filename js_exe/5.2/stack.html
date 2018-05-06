@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    "use strict";
+
+    //stack
+    var colors = new Array();
+    var count = colors.push("red","green");
+    console.log(count);
+    console.log(colors);//对象的打印
+    console.log(colors.toString());//red,green
+
+    count = colors.push("black");
+    console.log(count);
+    console.log(colors.length);//3
+    var item = colors.pop();
+    console.log(item);
+    console.log(colors.length);//2
+
+    //queue
+    var queue = ['spring','summer'];
+    let num = queue.push('fall');
+    console.log(num);
+    let it = queue.shift();
+    console.log(it);
+    console.log(queue.length);
+
+    //un queue
+    var newQueue = new Array();
+    newQueue.unshift("red","green");
+    console.log(newQueue.toString());
+    newQueue.unshift("black");//在数组的前面插入
+    console.log(newQueue.toString());
+
+    var value = newQueue.pop();//取出数组后面的元素
+    console.log(value);
+
+    
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
